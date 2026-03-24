@@ -1,0 +1,5 @@
+READ UNCOMMITTED is unsafe because it allows dirty reads. One transaction can read data that another transaction has not yet committed, which may later be rolled back.
+
+REPEATABLE READ prevents non-repeatable reads by ensuring that data read during a transaction does not change.
+
+SERIALIZABLE ensures maximum consistency by making transactions behave sequentially, but it reduces performance due to locking.

@@ -8,3 +8,6 @@ class Product(Base):
     name = Column(String(255))
     category = Column(String(255))
     price = Column(Float)
+    stock = Column(Integer, nullable=False, default=0)
+    stock = Column(Integer, default=0)
+    

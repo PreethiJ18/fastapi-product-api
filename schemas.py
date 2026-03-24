@@ -13,6 +13,6 @@ class ProductCreate(ProductBase):
 
 class Product(ProductBase):
     id: int
+    stock: int
 
-    model_config = ConfigDict(from_attributes=True)
-    
+    model_config = ConfigDict(from_attributes=True) 

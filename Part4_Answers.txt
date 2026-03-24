@@ -1,0 +1,5 @@
+Transactions ensure that all steps either complete fully or fail completely, preventing inconsistent data.
+
+Connection pooling helps manage multiple users efficiently by reusing database connections instead of creating new ones.
+
+Without transactions, partial updates can occur. Without connection pooling, the system may become slow or crash due to too many connections.

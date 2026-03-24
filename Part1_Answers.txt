@@ -1,0 +1,5 @@
+Both requests read the same stock value (5) before updating. One request wants 5 units and another wants 3 units. This can result in both being processed, causing stock to go negative, which is incorrect.
+
+This is a race condition and lost update problem.
+
+This happens because there is no transaction management, so both requests execute at the same time without coordination.
